@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="availabilityContext" prefHeight="576.0" prefWidth="897.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AvailabilityFormController">
+   <children>
+      <ImageView fitHeight="655.0" fitWidth="897.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/regenta-place-mandrem.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="24.0" layoutY="128.0" opacity="0.85" prefHeight="49.0" prefWidth="368.0" style="-fx-background-color: white; -fx-background-radius: 70; -fx-border-color: black; -fx-border-radius: 70; -fx-border-width: 5;">
+         <children>
+            <JFXComboBox fx:id="cmbRoom" layoutX="40.0" layoutY="9.0" prefHeight="31.0" prefWidth="284.0" promptText="Rooms">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXComboBox>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblAvailability" layoutX="214.0" layoutY="222.0" opacity="0.78" prefHeight="285.0" prefWidth="533.0" style="-fx-border-width: 5; -fx-border-color: black;">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="146.0" text="Room Id" />
+          <TableColumn fx:id="colAvailable" prefWidth="193.0" text="Available" />
+            <TableColumn fx:id="colNotAvailable" prefWidth="193.0" text="Not Available" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="766.0" layoutY="533.0" onAction="#goToRoomPage" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #2ecc71;" text="Booking" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="-2.0" layoutY="43.0" prefHeight="45.0" prefWidth="897.0" text="CHECKING AVAILABILITY">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="customerDataContext" prefHeight="527.0" prefWidth="803.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerDataFormController">
+   <children>
+      <ImageView fitHeight="592.0" fitWidth="803.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/AAA.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="27.0" layoutY="72.0" prefHeight="21.0" prefWidth="211.0" text="Room Id" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="131.0" prefHeight="21.0" prefWidth="211.0" text="Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="377.0" prefHeight="21.0" prefWidth="211.0" text="Address" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="314.0" prefHeight="21.0" prefWidth="211.0" text="Email" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="251.0" prefHeight="21.0" prefWidth="211.0" text="Contact" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="195.0" prefHeight="21.0" prefWidth="211.0" text="NIC" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="493.0" prefHeight="21.0" prefWidth="211.0" text="Check Out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="437.0" prefHeight="21.0" prefWidth="211.0" text="Check In" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtRId" layoutX="160.0" layoutY="72.0" opacity="0.85" prefHeight="31.0" prefWidth="211.0" style="-fx-background-color: white;" />
+      <JFXTextField fx:id="txtName" layoutX="160.0" layoutY="131.0" opacity="0.85" prefHeight="31.0" prefWidth="211.0" style="-fx-background-color: white;" />
+      <JFXTextField fx:id="txtNic" layoutX="160.0" layoutY="193.0" opacity="0.85" prefHeight="31.0" prefWidth="211.0" style="-fx-background-color: white;" />
+      <JFXTextField fx:id="txtContact" layoutX="160.0" layoutY="250.0" opacity="0.85" prefHeight="31.0" prefWidth="211.0" style="-fx-background-color: white;" />
+      <JFXTextField fx:id="txtEmail" layoutX="160.0" layoutY="312.0" opacity="0.85" prefHeight="31.0" prefWidth="211.0" style="-fx-background-color: white;" />
+      <JFXTextField fx:id="txtAddress" layoutX="160.0" layoutY="375.0" opacity="0.85" prefHeight="31.0" prefWidth="211.0" style="-fx-background-color: white;" />
+      <JFXTextField fx:id="txtIn" layoutX="160.0" layoutY="437.0" opacity="0.85" prefHeight="31.0" prefWidth="211.0" style="-fx-background-color: white;" />
+      <JFXTextField fx:id="txtOut" layoutX="160.0" layoutY="493.0" opacity="0.85" prefHeight="31.0" prefWidth="211.0" style="-fx-background-color: white;" />
+      <JFXButton buttonType="RAISED" layoutX="582.0" layoutY="477.0" onAction="#sendingEmail" prefHeight="31.0" prefWidth="181.0" style="-fx-background-color: #2ecc71;" text="Send Email" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="6.0" layoutY="12.0" prefHeight="45.0" prefWidth="792.0" text="CUSTOMER DETAILS" textFill="WHITE">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

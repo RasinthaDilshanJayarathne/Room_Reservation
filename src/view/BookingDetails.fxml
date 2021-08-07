@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="detailsContext" prefHeight="518.0" prefWidth="921.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BookingDetailsController">
+   <children>
+      <ImageView fitHeight="524.0" fitWidth="990.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/images2.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="9.0" layoutY="14.0" onAction="#goToBackHome" prefHeight="39.0" prefWidth="100.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="Back ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblDetails" layoutX="226.0" layoutY="210.0" opacity="0.84" prefHeight="253.0" prefWidth="528.0" style="-fx-background-color: white;">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="167.0" text="Room Id" />
+          <TableColumn fx:id="colName" prefWidth="163.0" text="Name" />
+            <TableColumn fx:id="colIn" prefWidth="196.0" text="Check-In" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="778.0" layoutY="19.0" onAction="#goToAddRooms" style="-fx-background-color: #2ecc71;" text="+Add Room" textFill="#f5f5f5">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label alignment="CENTER" layoutY="88.0" prefHeight="21.0" prefWidth="936.0" text="Booking Details">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

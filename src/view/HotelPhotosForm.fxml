@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="photosContext" prefHeight="538.0" prefWidth="1010.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HotelPhotosFormController">
+   <children>
+      <ImageView fitHeight="174.0" fitWidth="382.0" layoutX="621.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/d2ba8e83ae720f8388bd2bf773fe249c.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="297.0" fitWidth="420.0" layoutX="351.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/16_13_2020_03_13_53Use7.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="246.0" fitWidth="195.0" layoutX="33.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/10fd2b883c6c7f1160912ba3f2fafbea.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="229.0" fitWidth="328.0" layoutX="251.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/AAA.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="188.0" fitWidth="353.0" layoutX="34.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/z_29.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="246.0" fitWidth="169.0" layoutX="807.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Hotel4.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="18.0" layoutY="11.0" onAction="#backToHome" prefHeight="37.0" prefWidth="77.0" style="-fx-background-color: white; -fx-background-radius: 70;" text="Back">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

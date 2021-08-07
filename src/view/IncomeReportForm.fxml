@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="incomeContext" prefHeight="560.0" prefWidth="999.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IncomeReportFormController">
+   <children>
+      <ImageView fitHeight="612.0" fitWidth="999.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/images1.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="16.0" layoutY="15.0" onAction="#goToBack" prefHeight="37.0" prefWidth="71.0" style="-fx-background-color: black; -fx-background-radius: 50;" text="Back" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <TableView layoutX="31.0" layoutY="175.0" opacity="0.74" prefHeight="358.0" prefWidth="938.0" style="-fx-background-color: #e3dac9; -fx-border-color: #ba8759; -fx-border-width: 5;" />
+      <Label alignment="CENTER" layoutY="68.0" prefHeight="45.0" prefWidth="999.0" text="INCOME REPORT">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

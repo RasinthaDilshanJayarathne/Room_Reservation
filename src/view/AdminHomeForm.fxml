@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="roomsContext" prefHeight="724.0" prefWidth="933.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminHomeFormController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="187.0" prefWidth="946.0" style="-fx-background-color: #000024;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="281.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="431.0" layoutY="76.0" prefHeight="45.0" prefWidth="365.0" text="Blue Ocean Hotel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="19.0" layoutY="16.0" onAction="#goToBack" prefHeight="35.0" prefWidth="66.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="Back">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="543.0" fitWidth="946.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/hotelr2.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="31.0" layoutY="265.0" opacity="0.8" prefHeight="350.0" prefWidth="275.0" style="-fx-background-color: #cfcfcf; -fx-background-radius: 70; -fx-border-color: black; -fx-border-radius: 70; -fx-border-width: 5;">
+         <children>
+            <JFXButton layoutX="16.0" layoutY="148.0" onAction="#goToRoomsPage" prefHeight="56.0" prefWidth="237.0" style="-fx-background-color: black;" text="Rooms" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="336.0" layoutY="266.0" opacity="0.8" prefHeight="350.0" prefWidth="275.0" style="-fx-background-color: #cfcfcf; -fx-background-radius: 70; -fx-border-color: black; -fx-border-radius: 70; -fx-border-width: 5;">
+         <children>
+            <JFXButton layoutX="20.0" layoutY="144.0" onAction="#goToIncomePage" prefHeight="56.0" prefWidth="237.0" style="-fx-background-color: black;" text="Income Reports" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="640.0" layoutY="265.0" opacity="0.8" prefHeight="350.0" prefWidth="275.0" style="-fx-background-color: #cfcfcf; -fx-background-radius: 70; -fx-border-color: black; -fx-border-radius: 70; -fx-border-width: 5;">
+         <children>
+            <JFXButton layoutX="32.0" layoutY="145.0" onAction="#goToMealsPage" prefHeight="56.0" prefWidth="205.0" style="-fx-background-color: black;" text="Meal Package" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="82.0" fitWidth="88.0" layoutX="856.0" layoutY="634.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/logo.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="194.0" layoutY="158.0" prefHeight="72.0" prefWidth="582.0" style="-fx-background-color: white;" />
+      <Label alignment="CENTER" layoutX="194.0" layoutY="172.0" prefHeight="48.0" prefWidth="582.0" text="Admin HOME PAGE">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="30.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="homePageContext" prefHeight="722.0" prefWidth="944.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReceptionistHomeFormController">
+   <children>
+      <AnchorPane prefHeight="187.0" prefWidth="944.0" style="-fx-background-color: #000024;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="253.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="403.0" layoutY="59.0" prefHeight="45.0" prefWidth="264.0" text="Blue Ocean Hotel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="16.0" layoutY="16.0" onAction="#goToBack" prefHeight="35.0" prefWidth="67.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="Back">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="538.0" fitWidth="944.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/sea.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="190.0" layoutY="152.0" prefHeight="72.0" prefWidth="568.0" style="-fx-background-color: white;" />
+      <Label alignment="CENTER" layoutX="190.0" layoutY="164.0" prefHeight="48.0" prefWidth="568.0" text="Reception HOME PAGE">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="30.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <ImageView fitHeight="82.0" fitWidth="88.0" layoutX="853.0" layoutY="634.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/logo.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="115.0" layoutY="276.0" opacity="0.81" prefHeight="330.0" prefWidth="280.0" style="-fx-background-color: #cfcfcf; -fx-background-radius: 70; -fx-border-color: black; -fx-border-radius: 70; -fx-border-width: 5;">
+         <children>
+            <JFXButton layoutX="21.0" layoutY="134.0" onAction="#goToBookingPage" prefHeight="56.0" prefWidth="238.0" style="-fx-background-color: black;" text="Reserve a Room" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="542.0" layoutY="274.0" opacity="0.81" prefHeight="330.0" prefWidth="280.0" style="-fx-background-color: #cfcfcf; -fx-background-radius: 70; -fx-border-color: black; -fx-border-radius: 70; -fx-border-width: 5;">
+         <children>
+            <JFXButton layoutX="11.0" layoutY="142.0" onAction="#goToMaintainance" prefHeight="56.0" prefWidth="264.0" style="-fx-background-color: black;" text="Mark As Maintaince" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
